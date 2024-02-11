@@ -131,7 +131,7 @@ def barkingburg_q1(attempts):
         print("You've run out of attempts! Let's try a different mission.")
         place_chooser()
         return
-    q1 = input("What can be broken before it can be used").lower()
+    q1 = input("What can be broken before it can be used? :").lower()
     if "egg" in q1 or "egg" in q1 or "egg" in q1 or "egg" in q1:
        print("Wow! You got this question right, read the next question: ")
        barkingburg_q2(3)
@@ -152,7 +152,7 @@ def barkingburg_q2(attempts):
         print("You've run out of attempts! Let's try a different mission.")
         place_chooser()
         return
-    q2 = input("What can run but can't walk?").lower()
+    q2 = input("What can run but can't walk? : ").lower()
     if "water" in q2 or "river" in q2 or "ocean" in q2:
         print ("Awesome, you got it right again! Only one more to go")
         barkingburg_q3(3)
@@ -173,12 +173,14 @@ def barkingburg_q3(attempts):
        print("You've run out of attempts! Let's try a different mission.")
        place_chooser()
        return
-    q3 = input("You are worried because as you read the riddle, you hear a scary and menacing voice say, 'this riddle is the hardest of them all, you will never guess it. Mwhahahahaha' \n What goes up and down but never moves?").lower()
+    q3 = input("You are worried because as you read the riddle, you hear a scary and menacing voice say, 'this riddle is the hardest of them all, you will never guess it. Mwhahahahaha' \n What goes up and down but never moves? :").lower()
   
     if "stairs" in q3 or "staircase" in q3 or "steps" in q3:
-       print(f"The vault door swings open, and reveals… sweetie, the princesses beloved dog. \n 'Sweetie?' Ryder asked curiously. 'What are you doing here!' You stand there utterly confused, but you manage to ask, 'Why did you steal the Princesses crown. In response sweetie lowers her head ashamed and says, 'I didn't want her to be a princess and I thought without her crown she couldn't be the princess.' \n Ryder says. ' Well, thanks to username here, we were able to stop you.' 'I admit', says sweetie, 'that was pretty impressive of you.'" )
        print()
-       print(f"Ryder picks sweetie up, and passes you the crown to keep safe, and you proudly walk back to the princess, and return the crown to her. She is overjoyed, and praises you, while reprimanding sweetie. She whispers something to Ryder, and then ryder says, 'Good job username, you have completed your mission, and with the Princess of Barkingburg's blessing, I, pronounce you an official honorary member of the Paw Patrol!'")
+       print()
+       print(f"The vault door swings open, and reveals… sweetie, the princesses beloved dog. \n 'Sweetie?' Ryder asked curiously. 'What are you doing here!' You stand there utterly confused, but you manage to ask, 'Why did you steal the Princesses crown. In response sweetie lowers her head ashamed and says, 'I didn't want her to be a princess and I thought without her crown she couldn't be the princess.' \n Ryder says. ' Well, thanks to {username} here, we were able to stop you.' 'I admit', says sweetie, 'that was pretty impressive of you.'" )
+       print()
+       print(f"Ryder picks sweetie up, and passes you the crown to keep safe, and you proudly walk back to the princess, and return the crown to her. She is overjoyed, and praises you, while reprimanding sweetie. She whispers something to Ryder, and then ryder says, 'Good job {username}, you have completed your mission, and with the Princess of Barkingburg's blessing, I, pronounce you an official honorary member of the Paw Patrol!'")
        print()
        print(f"We are all so proud of you, and we thank you for your service!")
 
